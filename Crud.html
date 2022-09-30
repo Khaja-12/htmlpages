@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Method</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #71b7e6, #9b59b6)
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        table,
+        th,
+        td {
+            border: .1rem solid black;
+        }
+
+        table {
+            border: .1rem solid black;
+            height: .4rem;
+            width: 60%;
+        }
+
+        #btn-edit {
+            background-color: blue;
+            color: white;
+            border-radius: .5rem;
+
+        }
+
+        #submit {
+            background-color: blue;
+            color: white;
+            border-radius: .5rem;
+        }
+
+        #save {
+            display: none;
+            background-color: blue;
+            color: white;
+            border-radius: .5rem;
+            margin: .5rem;
+        }
+
+        #btn-delete {
+            background-color: red;
+            color: white;
+            border-radius: .5rem;
+        }
+
+        /* 
+        form {
+            width: 50vw;
+            height: auto;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: .1rem .1rem;
+            margin: auto;
+            width: 30%;
+        } */
+
+
+        #btn_clr {
+            border-radius: .5rem;
+            margin: .5rem;
+        }
+
+
+        /* 
+        input {
+            height: 1.8rem;
+            flex: 1 1 20rem;
+            margin: 2rem;
+            margin: .4rem .4rem;
+            padding: .4rem .4rem;
+            border-radius: .5rem;
+        } */
+    </style>
+</head>
+
+<body>
+    <u>
+        <h1 align="center">Employe Details</h1>
+    </u>
+    <form action="" method="post" id="form">
+
+        <div>
+            <label for="name">Name : </label>
+            <input required type="text" name="name" id="name" placeholder="Enter Your Name">
+            <br><br>
+
+
+            <label for="company">Company : </label>
+            <input required type="text" name="company" id="company" placeholder="Enter Your Company">
+            <br><br>
+
+            <label for="designation">Designation :</label>
+            <input required type="text" name="designation" id="designation" placeholder="Enter Your designation">
+            <br><br>
+
+            <label for="employ_id">Employ id :</label>
+            <input required type="text" name="employ_id" id="employ_id" placeholder="Enter Your employ_id">
+            <br><br>
+            <label for="location">Location :</label>
+            <input required type="text" name="location" id="location" placeholder="Enter Your location">
+            <br><br>
+
+            <input type="submit" id="submit" value="Submit">
+            <button type="button" id="save" >Save</button>
+            <input type="button" id="btn_clr" onclick="clear()" value="Clear">
+            <br><br>
+        </div>
+    </form> <br>
+    <table class="post_list" >
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>company</th>
+                <th>designation</th>
+                <th>employ_id</th>
+                <th>location</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="tbody" >
+
+        </tbody>
+    </table> <br>
+
+    <script src="./postApi.js"></script>
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+{
+  "student": [
+    {
+      "name": "Khaja bilal",
+      "company": "cashapona",
+      "designation": "React Developer",
+      "employ_id": "12",
+      "location": "Hyderabad",
+      "id": 1
+    },
+    {
+      "name": "ahmed ",
+      "company": "cashapona",
+      "designation": "React Developer",
+      "employ_id": "15",
+      "location": "Hyderabad",
+      "id": 2
+    },
+    {
+      "name": "nasir",
+      "company": "IBM",
+      "designation": "Accountant",
+      "employ_id": "55",
+      "location": "Bangalore",
+      "id": 3
+    },
+    {
+      "name": "Vinay",
+      "company": "wipro",
+      "designation": "Tech Support",
+      "employ_id": "1554",
+      "location": "Bangalore",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "name": "adi",
+      "company": "cashapona",
+      "designation": "React Developer",
+      "employ_id": "09",
+      "location": "Hyderabad"
+    },
+    {
+      "name": "sai",
+      "company": "cashapona",
+      "designation": "React Developer",
+      "employ_id": "102",
+      "location": "Hyderabad",
+      "id": 6
+    },
+    {
+      "name": "Yogesh",
+      "company": "cashapona",
+      "designation": "React Developer",
+      "employ_id": "05",
+      "location": "Hyderabad",
+      "id": 7
+    },
+    {
+      "name": "Malikarjun",
+      "company": "Metalok",
+      "designation": "Logistic ",
+      "employ_id": "1524",
+      "location": "Hyderabad",
+      "id": 8
+    }
+  ]
+}

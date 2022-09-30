@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Method</title>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+        table{
+            border: 1px solid black;
+            height: 40px;
+            width: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Cashapona Form</h1>
+        <form action="" method="post" id="form">
+            <div>
+                <label for="userId">userId : </label>
+                <input type="text" name="userId" id="userId" placeholder="Enter Your userId">
+            </div> <br>
+             
+            <div>
+            <label for="title">title : </label>
+            <input type="text" name="title" id="title" placeholder="Enter Your title">
+        </div> <br>
+
+        <div>
+            <label for="body">body :</label>
+            <input type="text" name="body" id="body" placeholder="Enter Your body">
+        </div> <br>
+
+        <div>
+            <div class="btn">
+                <input type="submit" value="Submit">
+            </div>
+        </form> <br>
+    <div class="table">
+        <table>
+            <thead >
+                <tr>
+                    <th>userId</th>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>body</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+               
+            </tbody>
+        </table>
+    </div>
+    <script src="./postApi.js"></script>
+    </script>
+</body>
+
+</html>

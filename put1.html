@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+        table{
+            border: 1px solid black;
+            height: 40px;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Update the data with put api request</h1>
+    <form action="" method="post" id="form">
+        <div>
+            <label for="userId">userId : </label>
+            <input type="text" name="userId" id="userId" placeholder="Enter Your userId">
+        </div> <br>
+
+        <div>
+            <label for="id">Id : </label>
+            <input type="text" name="id" id="id" placeholder="Enter Your userId">
+        </div> <br>
+         
+        <div>
+        <label for="title">title : </label>
+        <input type="text" name="title" id="title" placeholder="Enter Your title">
+    </div> <br>
+
+    <div>
+        <label for="body">body :</label>
+        <input type="text" name="body" id="body" placeholder="Enter Your body">
+    </div> <br>
+
+    <div>
+        <div class="btn">
+            <input type="submit" value="Update">
+        </div>
+    </form> <br>
+    <div class="table">
+        <table>
+            <thead >
+                <tr>
+                    <th>userId</th>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>body</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+               
+            </tbody>
+        </table>
+    <script>
+      let form = document.getElementById('form')
+form.addEventListener('submit', function (e) {
+
+    e.preventDefault()
+
+    let title = document.getElementById('title').value
+    let userId = document.getElementById('userId').value
+    let body = document.getElementById('body').value
+    let id = document.getElementById('id').value
+
+
+    fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+        method: "PUT",
+        body: JSON.stringify({
+             userId,
+             id,
+             title,
+             body
+        }),
+        headers: {
+            "Content-Type": "application/json; charset=UTF-8"
+        }
+    })
+        .then(function (res) {
+            return res.json()
+        })
+        .then(function (result) {
+            console.log(result)
+            
+            let data = document.getElementById('tbody')
+            
+            data.innerHTML = 
+            `<tr>
+            <td>${result.userId}<td/>
+            <td>${result.id}<td/>
+            <td>${result.title}</td>
+            <td>${result.body}</td>
+            </tr>`
+            alert("Updated New User")
+})
+})
+    </script>
+</body>
+</html>

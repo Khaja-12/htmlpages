@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(135deg,#71b7e6,#9b59b6)
+}
+.container{
+    margin: 4px 4px;
+    padding: 4px 4px;
+}
+.input{
+    margin: 2px 2px;
+    padding: 2px 2px;
+}
+form{
+    margin-top: 25px;
+}
+.label{
+    margin: 5px 5px;
+    padding: 5px 5px;
+}
